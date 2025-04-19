@@ -13,7 +13,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding: 20px;
             text-align: center;
         }
         img {
@@ -23,12 +24,35 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
         h1 {
-            font-size: 2em;
+            font-size: 2.2em;
             margin: 20px 0 10px;
         }
         p {
             font-size: 1.2em;
             color: #555;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input[type="email"] {
+            padding: 12px;
+            font-size: 1em;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 1em;
+            margin-left: 10px;
+            background-color: #c1a264;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a88a54;
         }
     </style>
 </head>
@@ -36,5 +60,9 @@
     <img src="render.jpg" alt="Atelier Miniatura - Coming Soon">
     <h1>Atelier Miniatura</h1>
     <p>Illuminated architectural miniatures — Launching Soon</p>
+    <form action="https://formspree.io/f/mqaprqgp" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Notify Me</button>
+    </form>
 </body>
 </html>
